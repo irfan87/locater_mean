@@ -13,4 +13,21 @@ html
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
   body
-    block content
+    .navbar.navbar-default.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href='/') Loc8r
+                button.navbar-toggle(type='button', data-toggle="collapse", data-target="#navbar-main")
+                  span.icon-bar
+                  span.icon-bar
+                  span.icon-bar
+              #navbar-main.navbar-collapse.collapse
+                ul.nav.navbar-nav
+                  li
+                    a(href="/about") About
+    .container
+      block content
+      footer
+       .row
+          .col-xs-12
+            small &copy; Ahmad Irfan 2017
